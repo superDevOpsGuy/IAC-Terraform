@@ -5,7 +5,7 @@ resource "aws_vpc" "vpc" {
   enable_dns_support = true
 
   tags =  {
-    name = "vpc/feature-01"
+    Name = "vpc/feature-01"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_subnet" "pubic-subnet" {
   map_public_ip_on_launch = true
 
   tags = {
-    name = "subnet-01-public"
+    Name = "subnet-01-public"
   }
 }
 
@@ -27,7 +27,7 @@ resource "aws_subnet" "pubic-subnet-02" {
   map_public_ip_on_launch = true
 
   tags = {
-    name = "subnet-02-public"
+    Name = "subnet-02-public"
   }
 }
 
@@ -35,7 +35,7 @@ resource "aws_internet_gateway" "igw" {
    vpc_id = aws_vpc.vpc.id
 
    tags = {
-     name = "igw"
+     Name = "igw"
    }
 }
 
