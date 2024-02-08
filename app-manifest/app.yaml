@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: reddit-app
-        image: vinayjadhav/Reddit-clone-app:latest
+        image: vinayjadhav/Reddit-clone-app:replaceImageTag
         ports:
           - containerPort: 3000
         resources:
