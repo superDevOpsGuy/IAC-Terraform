@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: vinayjadhav/app-Java:replaceImageTag
+        image: vinayjadhav/app-Java:latest
         ports:
           - containerPort: 8080
         
